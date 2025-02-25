@@ -17,8 +17,10 @@ class Cicero(discord.Client):
 
         self.tree = app_commands.CommandTree(self)
 
+
     async def setup_hook(self):
         await self.tree.sync()
+
 
     async def on_ready(self):
         print(f'{self.user} has connected to Discord!')

@@ -11,7 +11,5 @@ def roll_asm_dice(num_dice, num_sides):
         result = f"D{num_sides}: {dice['d' + str(num_sides)][dice_value]}"
 
         results.append(result)
-
-        # print(f"D{num_sides}: {dice['d' + str(num_sides)][dice_value]}")
         
     return "\n".join(results)
