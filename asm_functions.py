@@ -1,4 +1,4 @@
-from random import randint, random
+from random import randint
 from asm_assets import dice, deck
 
 def roll_asm_dice(num_dice, num_sides):
@@ -11,5 +11,5 @@ def roll_asm_dice(num_dice, num_sides):
         result = f"D{num_sides}: {dice['d' + str(num_sides)][dice_value]}"
 
         results.append(result)
-        
+
     return "\n".join(results)
